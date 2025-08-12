@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>RIRA GLOW</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="font-sans bg-[#f5f0e1]">
+
+<!-- Header Section -->
+<header class="sticky top-0 z-50 bg-[#f5f0e1] shadow-sm">
+    <nav class="container mx-auto p-4 flex items-center justify-between">
+        <!-- Logo -->
+        <div class="flex-shrink-0">
+            <a href="#home">
+                <img src="D:\/logo.jpg" alt="Rira Glow Logo" title="RIRA GLOW Logo" class="logo-container h-auto w-32"/>
+            </a>
+        </div>
+
+        <!-- Navigation Links - Desktop -->
+        <div class="hidden md:flex space-x-8 text-lg font-semibold">
+            <a href="#home" class="hover:text-[#a07f6e] transition-colors duration-300">Home</a>
+            <a href="#products" class="hover:text-[#a07f6e] transition-colors duration-300">Products</a>
+            <a href="#scent-discovery" class="hover:text-[#a07f6e] transition-colors duration-300">Discover</a>
+            <a href="#about" class="hover:text-[#a07f6e] transition-colors duration-300">About</a>
+            <a href="#contact" class="hover:text-[#a07f6e] transition-colors duration-300">Contact</a>
+        </div>
+
+        <!-- Cart Icon -->
+        <div class="relative">
+            <button id="cart-button" class="relative focus:outline-none">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-7 w-7 text-[#3e2c21]" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                          d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13l-1.5 6h13l-1.5-6M7 13h10m-6 6a2 2 0 1 1-4 0m10 0a2 2 0 1 1-4 0" />
+                </svg>
+                <span id="cart-count" class="absolute -top-2 -right-2 bg-red-500 text-white text-xs font-bold px-1.5 py-0.5 rounded-full">0</span>
+            </button>
+        </div>
+
+        <!-- Mobile Menu Button -->
+        <button id="mobile-menu-button" class="md:hidden text-2xl focus:outline-none">
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16m-7 6h7" />
+            </svg>
+        </button>
+    </nav>
+
+    <!-- Mobile Menu -->
+    <div id="mobile-menu" class="hidden md:hidden bg-[#f5f0e1] px-4 pb-4">
+        <a href="#home" class="block py-2 text-lg hover:bg-[#ebe1d1] transition-colors duration-300 rounded-lg text-[#3e2c21]">Home</a>
+        <a href="#products" class="block py-2 text-lg hover:bg-[#ebe1d1] transition-colors duration-300 rounded-lg text-[#3e2c21]">Products</a>
+        <a href="#scent-discovery" class="block py-2 text-lg hover:bg-[#ebe1d1] transition-colors duration-300 rounded-lg text-[#3e2c21]">Discover</a>
+        <a href="#about" class="block py-2 text-lg hover:bg-[#ebe1d1] transition-colors duration-300 rounded-lg text-[#3e2c21]">About</a>
+        <a href="#contact" class="block py-2 text-lg hover:bg-[#ebe1d1] transition-colors duration-300 rounded-lg text-[#3e2c21]">Contact</a>
+    </div>
+</header>
+
+<!-- Main Content -->
+<main>
+    <!-- Hero Section -->
+    <section id="home" class="container mx-auto px-4 py-20 md:py-32 flex flex-col items-center justify-center text-center">
+        <h2 class="text-5xl md:text-7xl font-heading font-bold mb-4">Crafted with Care, Lit with Love</h2>
+        <p class="text-xl md:text-2xl max-w-2xl mb-8">Discover our collection of handcrafted candles, designed to illuminate your space and soothe your soul.</p>
+        <button class="bg-[#3e2c21] text-[#f5f0e1] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#a07f6e] transition-colors duration-300">
+            Shop the Collection
+        </button>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="container mx-auto px-4 py-16">
+        <h3 class="text-4xl font-heading font-bold text-center mb-12">Our Bestsellers</h3>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- Product Card 1 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="D:\html/a.jpg" alt="Crystal candle with a mogra fragrance" class="w-full h-64 object-cover">
+                <div class="p-6 text-center">
+                    <h4 class="text-2xl font-heading font-semibold mb-2">Crystal Candle Mogra</h4>
+                    <p class="text-gray-600 mb-4">₹1299.00</p>
+                    <button class="add-to-cart-btn bg-[#f5f0e1] text-[#3e2c21] font-semibold py-2 px-6 rounded-full border border-[#3e2c21] hover:bg-[#ebe1d1] transition-colors duration-300"
+                        data-product-name="Crystal Candle Mogra"
+                        data-product-price="1299">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 2 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="D:\html/c.jpg" alt="Candle with a soothing lavender fragrance" class="w-full h-64 object-cover">
+                <div class="p-6 text-center">
+                    <h4 class="text-2xl font-heading font-semibold mb-2">Rira's Lavender Candle</h4>
+                    <p class="text-gray-600 mb-4">₹125.00</p>
+                    <button class="add-to-cart-btn bg-[#f5f0e1] text-[#3e2c21] font-semibold py-2 px-6 rounded-full border border-[#3e2c21] hover:bg-[#ebe1d1] transition-colors duration-300"
+                        data-product-name="Rira's Lavender Candle"
+                        data-product-price="125">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Card 3 -->
+            <div class="bg-white rounded-xl shadow-lg overflow-hidden transform hover:scale-105 transition-transform duration-300">
+                <img src="D:\html/b.jpg" alt="Candle with a rich french vanilla fragrance" class="w-full h-64 object-cover">
+                <div class="p-6 text-center">
+                    <h4 class="text-2xl font-heading font-semibold mb-2">French Vanilla Candle</h4>
+                    <p class="text-gray-600 mb-4">₹249.00</p>
+                    <button class="add-to-cart-btn bg-[#f5f0e1] text-[#3e2c21] font-semibold py-2 px-6 rounded-full border border-[#3e2c21] hover:bg-[#ebe1d1] transition-colors duration-300"
+                        data-product-name="French Vanilla Candle"
+                        data-product-price="249">Add to Cart</button>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <!-- Scent Discovery Assistant -->
+    <section id="scent-discovery" class="container mx-auto px-4 py-16">
+        <div class="bg-[#ebe1d1] rounded-xl shadow-lg p-8 md:p-12 text-center">
+            <h3 class="text-4xl font-heading font-bold mb-4">Scent Discovery Assistant ✨</h3>
+            <p class="text-lg mb-6 max-w-2xl mx-auto">Tell us about your mood or a specific occasion, and our AI will suggest the perfect candle for you!</p>
+            <div class="flex flex-col items-center">
+                <textarea id="scent-prompt" class="w-full md:w-3/4 p-4 border border-[#3e2c21] rounded-lg mb-4 resize-none focus:outline-none focus:ring-2 focus:ring-[#a07f6e] font-body text-base" rows="4" placeholder="e.g., 'I want a candle for a relaxing evening with a book.'"></textarea>
+                <button id="get-recommendation-btn" class="bg-[#3e2c21] text-[#f5f0e1] font-semibold py-3 px-8 rounded-full shadow-lg hover:bg-[#a07f6e]">Get Scent Recommendation ✨</button>
+            </div>
+            <div id="recommendation-result" class="mt-8 text-left p-6 bg-white rounded-xl shadow-inner hidden"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="container mx-auto px-4 py-16">
+        <div class="bg-[#ebe1d1] rounded-xl shadow-lg p-8 md:p-12 flex flex-col md:flex-row items-center gap-8">
+            <div class="md:w-1/2">
+                <h3 class="text-4xl font-heading font-bold mb-4">Our Story</h3>
+                <p class="text-lg leading-relaxed">
+                    RIRA GLOW was founded by Ishika Sharma with a simple goal: to create beautiful, high-quality candles that bring joy and tranquility to every home. Each candle is hand-poured in small batches, using only the finest natural waxes and premium fragrance oils.
+                </p>
+            </div>
+            <div class="md:w-1/2">
+                <img src="D:\/logo.jpg" alt="Rira Glow Logo" alt="A hand holding a lit candle" class="w-full h-auto rounded-lg shadow-md" />
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="container mx-auto px-4 py-16">
+        <div class="bg-[#ebe1d1] rounded-xl shadow-lg p-8 md:p-12 text-center">
+            <h3 class="text-4xl font-heading font-bold mb-6">Contact Us</h3>
+            <p class="text-lg mb-4">Have questions or want to place an order? Reach out to us!</p>
+            <p class="text-lg font-semibold mb-2">Phone: <a href="tel:+91 9958079293" class="text-[#a07f6e] hover:underline">9958079293</a></p>
+            <p class="text-lg font-semibold">Email: <a href="mailto:info@riraglow.com" class="text-[#a07f6e] hover:underline">info@riraglow.com</a></p>
+        </div>
+    </section>
+</main>
+
+<!-- Cart Sidebar -->
+<div id="cart-sidebar" class="fixed top-0 right-0 w-80 h-full bg-white shadow-lg transform translate-x-full transition-transform duration-300 z-50">
+    <div class="p-4 flex justify-between items-center border-b">
+        <h3 class="text-xl font-semibold">Your Cart</h3>
+        <button id="close-cart" class="text-gray-500 hover:text-gray-800 text-2xl">&times;</button>
+    </div>
+    <div id="cart-items" class="p-4 space-y-4">
+        <p class="text-gray-500">Your cart is empty.</p>
+    </div>
+    <div class="p-4 border-t">
+        <p class="font-semibold">Total: ₹<span id="cart-total">0</span></p>
+        <button class="mt-4 w-full bg-[#3e2c21] text-[#f5f0e1] py-2 rounded-lg hover:bg-[#a07f6e]">Checkout</button>
+    </div>
+</div>
+
+<!-- Cart Script -->
+<script>
+    const cart = [];
+    const cartCount = document.getElementById('cart-count');
+    const cartItemsContainer = document.getElementById('cart-items');
+    const cartTotal = document.getElementById('cart-total');
+    const cartSidebar = document.getElementById('cart-sidebar');
+
+    document.querySelectorAll('.add-to-cart-btn').forEach(btn => {
+        btn.addEventListener('click', () => {
+            const name = btn.dataset.productName;
+            const price = parseFloat(btn.dataset.productPrice);
+
+            const existing = cart.find(item => item.name === name);
+            if (existing) {
+                existing.qty++;
+            } else {
+                cart.push({ name, price, qty: 1 });
+            }
+            updateCart();
+        });
+    });
+
+    function updateCart() {
+        cartItemsContainer.innerHTML = '';
+        let total = 0;
+
+        cart.forEach(item => {
+            total += item.price * item.qty;
+            cartItemsContainer.innerHTML += `
+                <div class="flex justify-between items-center border-b pb-2">
+                    <div>
+                        <p class="font-semibold">${item.name}</p>
+                        <p class="text-sm text-gray-500">₹${item.price} x ${item.qty}</p>
+                    </div>
+                    <button onclick="removeItem('${item.name}')" class="text-red-500 hover:underline">Remove</button>
+                </div>
+            `;
+        });
+
+        if (cart.length === 0) {
+            cartItemsContainer.innerHTML = '<p class="text-gray-500">Your cart is empty.</p>';
+        }
+
+        cartCount.textContent = cart.reduce((sum, item) => sum + item.qty, 0);
+        cartTotal.textContent = total.toFixed(2);
+    }
+
+    function removeItem(name) {
+        const index = cart.findIndex(item => item.name === name);
+        if (index > -1) cart.splice(index, 1);
+        updateCart();
+    }
+
+    document.getElementById('cart-button').addEventListener('click', () => {
+        cartSidebar.classList.remove('translate-x-full');
+    });
+    document.getElementById('close-cart').addEventListener('click', () => {
+        cartSidebar.classList.add('translate-x-full');
+    });
+</script>
+
+</body>
+</html>
